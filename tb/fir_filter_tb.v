@@ -5,8 +5,8 @@
 /////////////////////////////////////////////////////////////////////////////
 module fir_filter_tb();
 reg  signed [15 : 0]   fir_data_in_tb  ;
-reg                    fir_en_tb  	   ;
-reg         		   tap_wr_en_tb    ;
+reg                    fir_en_tb       ;
+reg         	       tap_wr_en_tb    ;
 reg  	    [5  : 0]   tap_wr_addr_tb  ; 
 reg         [15 : 0]   tap_wr_data_tb  ; 
 reg                    clk_tb          ;
@@ -28,7 +28,7 @@ integer i ;
 //-----DUT Instantiation
 fir_filter DUT (
 	.i_fir_data_in  (fir_data_in_tb)  ,
-	.i_fir_en  	    (fir_en_tb)       ,
+	.i_fir_en  	(fir_en_tb)       ,
 	.i_tap_wr_en    (tap_wr_en_tb)    ,
 	.i_tap_wr_addr  (tap_wr_addr_tb)  , 
 	.i_tap_wr_data  (tap_wr_data_tb)  , 
