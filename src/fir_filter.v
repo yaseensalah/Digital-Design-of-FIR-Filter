@@ -12,11 +12,11 @@ module fir_filter
 	(
 		input  wire  signed [DATA_IN_WIDTH-1 : 0]   i_fir_data_in  ,
 		input  wire                                 i_fir_en  	   ,
-		input  wire         				  	    i_tap_wr_en    ,
+		input  wire         			    i_tap_wr_en    ,
 		input  wire  	    [TAP_ADDR_WIDTH-1 : 0]  i_tap_wr_addr  , 
 		input  wire         [TAP_DATA_WIDTH-1 : 0]  i_tap_wr_data  , 
-		input  wire                        		    i_clk          ,
-		input  wire                        		    i_rst_n        ,
+		input  wire                                 i_clk          ,
+		input  wire                        	    i_rst_n        ,
 		output reg   signed [DATA_OUT_WIDTH-1 : 0]  o_fir_data_out      
 	);
 
@@ -136,31 +136,31 @@ always @(posedge i_clk or negedge i_rst_n) begin
 	else if (i_fir_en)
 		begin
 			o_fir_data_out <= accumulator[0]  + accumulator[1] 
-					    	+ accumulator[2]  + accumulator[3]
-					    	+ accumulator[4]  + accumulator[5]
-					    	+ accumulator[6]  + accumulator[7]
-					    	+ accumulator[8]  + accumulator[9]
-					    	+ accumulator[10] + accumulator[11]
-					    	+ accumulator[12] + accumulator[13]
-					    	+ accumulator[14] + accumulator[15]
-					    	+ accumulator[16] + accumulator[17]
-					    	+ accumulator[18] + accumulator[19]
-					    	+ accumulator[20] + accumulator[21]
-					    	+ accumulator[22] + accumulator[23]
-					    	+ accumulator[24] + accumulator[25]
-					    	+ accumulator[26] + accumulator[27]
-					    	+ accumulator[28] + accumulator[29]
-					    	+ accumulator[30] + accumulator[31]
-					    	+ accumulator[32] + accumulator[33]
-					    	+ accumulator[34] + accumulator[35]
-					    	+ accumulator[36] + accumulator[37]
-					    	+ accumulator[38] + accumulator[39]	
-					    	+ accumulator[40] + accumulator[41]
-					    	+ accumulator[42] + accumulator[43]
-					    	+ accumulator[44] + accumulator[45]
-					    	+ accumulator[46] + accumulator[47]
-					    	+ accumulator[48] + accumulator[49]
-					    	+ accumulator[50] ;					  				  
+					+ accumulator[2]  + accumulator[3]
+					+ accumulator[4]  + accumulator[5]
+					+ accumulator[6]  + accumulator[7]
+					+ accumulator[8]  + accumulator[9]
+					+ accumulator[10] + accumulator[11]
+					+ accumulator[12] + accumulator[13]
+					+ accumulator[14] + accumulator[15]
+					+ accumulator[16] + accumulator[17]
+					+ accumulator[18] + accumulator[19]
+					+ accumulator[20] + accumulator[21]
+					+ accumulator[22] + accumulator[23]
+					+ accumulator[24] + accumulator[25]
+					+ accumulator[26] + accumulator[27]
+					+ accumulator[28] + accumulator[29]
+					+ accumulator[30] + accumulator[31]
+					+ accumulator[32] + accumulator[33]
+					+ accumulator[34] + accumulator[35]
+					+ accumulator[36] + accumulator[37]
+					+ accumulator[38] + accumulator[39]	
+					+ accumulator[40] + accumulator[41]
+					+ accumulator[42] + accumulator[43]
+					+ accumulator[44] + accumulator[45]
+					+ accumulator[46] + accumulator[47]
+					+ accumulator[48] + accumulator[49]
+					+ accumulator[50] ;					  				  
 		end
 end
  
