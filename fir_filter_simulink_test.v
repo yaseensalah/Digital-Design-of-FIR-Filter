@@ -3,6 +3,8 @@
 // Creator: Yaseen Salah                                                  
 // Date   : 10 Feb 2023                                                  
 /////////////////////////////////////////////////////////////////////////////
+// MATLAB HDL Parser is not supporting "for loops" //
+// and "write in" memories with variable addres.   //
 module fir_filter
 	#(  parameter ORDER	         = 50 ,
 		parameter DATA_IN_WIDTH  = 16 ,
