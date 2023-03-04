@@ -14,7 +14,7 @@ Hardware Design and Verification of a configurable and parametrized 50th order l
 *Check the Documentation*
 1. Getting Started with FIR Filter Concept
 2. System Modeling using *MATLAB*
-3. FIR Filter Architecure (Block Diagram)
+3. FIR Filter Architecture (Block Diagram)
 4. Hardware Design using *Verilog*
 5. Testbench and Simulation using *Vivado*
 6. .WAV File Filtering using *Simulink*
